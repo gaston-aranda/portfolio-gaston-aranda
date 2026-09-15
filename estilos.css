@@ -222,3 +222,21 @@ footer {
     padding: 20px 24px;
   }
 }
+
+.sobre-mi {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.sobre-mi h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.sobre-mi p {
+  color: #475569;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
