@@ -1,0 +1,431 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #061a2b;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
+/* MENÚ */
+
+.encabezado {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(4, 25, 41, 0.94);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.navegacion {
+    max-width: 1150px;
+    margin: auto;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #56cfe1;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.enlaces {
+    display: flex;
+    gap: 28px;
+}
+
+.enlaces a {
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.enlaces a:hover {
+    color: #56cfe1;
+}
+
+/* PORTADA */
+
+.inicio {
+    min-height: 100vh;
+    padding: 150px 30px 80px;
+    display: flex;
+    align-items: center;
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(86, 207, 225, 0.25),
+            transparent 30%
+        ),
+        linear-gradient(135deg, #041929, #075985);
+}
+
+.contenido-inicio {
+    width: 100%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.ubicacion {
+    display: inline-block;
+    margin-bottom: 22px;
+    color: #56cfe1;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h1 {
+    max-width: 800px;
+    margin: 0 0 24px;
+    font-size: clamp(48px, 7vw, 84px);
+    line-height: 1;
+}
+
+.contenido-inicio p {
+    max-width: 650px;
+    margin: 0 0 35px;
+    color: #d5e8f0;
+    font-size: 21px;
+    line-height: 1.6;
+}
+
+.boton {
+    display: inline-block;
+    padding: 15px 25px;
+    color: #052238;
+    font-weight: bold;
+    background-color: #56cfe1;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: white;
+    transform: translateY(-3px);
+}
+
+/* SERVICIOS */
+
+.servicios {
+    padding: 100px 30px;
+    color: #08243a;
+    background-color: #f4f8fb;
+}
+
+.contenedor {
+    max-width: 1150px;
+    margin: auto;
+}
+
+.subtitulo {
+    color: #087e9b;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.servicios h2 {
+    max-width: 650px;
+    margin: 15px 0 45px;
+    font-size: 42px;
+    line-height: 1.15;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.tarjeta {
+    padding: 35px;
+    background-color: white;
+    border-top: 4px solid #56cfe1;
+    border-radius: 8px;
+    box-shadow: 0 12px 35px rgba(8, 36, 58, 0.1);
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+}
+
+.numero {
+    color: #087e9b;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.tarjeta h3 {
+    margin: 22px 0 15px;
+    font-size: 23px;
+}
+
+.tarjeta p {
+    margin: 0;
+    color: #536b7b;
+    line-height: 1.7;
+}
+
+/* NOSOTROS */
+
+.nosotros {
+    padding: 110px 30px;
+    color: white;
+    background-color: #061a2b;
+}
+
+.nosotros-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.texto-nosotros h2 {
+    margin: 15px 0 28px;
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.texto-nosotros p {
+    max-width: 650px;
+    margin: 0 0 18px;
+    color: #c8dbe5;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.panel-austral {
+    padding: 55px 40px;
+    background: linear-gradient(145deg, #087e9b, #075985);
+    border-radius: 10px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+}
+
+.panel-austral span {
+    color: #baf4ff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.panel-austral h3 {
+    margin: 18px 0;
+    font-size: 34px;
+}
+
+.panel-austral p {
+    margin: 0;
+    color: #e0f5fa;
+    line-height: 1.7;
+}
+
+/* CONTACTO */
+
+.contacto {
+    padding: 110px 30px;
+    color: #08243a;
+    background-color: white;
+}
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.texto-contacto h2 {
+    margin: 15px 0 25px;
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.texto-contacto > p {
+    color: #536b7b;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.datos-contacto {
+    margin-top: 35px;
+    padding-left: 20px;
+    border-left: 4px solid #56cfe1;
+}
+
+.datos-contacto p {
+    color: #536b7b;
+    line-height: 1.6;
+}
+
+.formulario {
+    display: grid;
+    gap: 12px;
+    padding: 35px;
+    background-color: #f4f8fb;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(8, 36, 58, 0.12);
+}
+
+.formulario label {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 14px;
+    color: #08243a;
+    font: inherit;
+    background-color: white;
+    border: 1px solid #c9d8e1;
+    border-radius: 6px;
+}
+
+.formulario textarea {
+    resize: vertical;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: 2px solid #56cfe1;
+    border-color: transparent;
+}
+
+.formulario button {
+    margin-top: 12px;
+    padding: 15px 24px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #087e9b;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #061a2b;
+}
+
+/* PIE DE PÁGINA */
+
+.pie {
+    padding: 28px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color: #c8dbe5;
+    background-color: #03111d;
+}
+
+.pie p {
+    margin: 0;
+}
+
+.pie a {
+    color: #56cfe1;
+    font-weight: bold;
+}
+
+.pie a:hover {
+    color: white;
+}
+
+/* DISEÑO RESPONSIVE */
+
+@media (max-width: 800px) {
+    .tarjetas,
+    .nosotros-grid,
+    .contacto-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nosotros-grid,
+    .contacto-grid {
+        gap: 40px;
+    }
+
+    .servicios h2,
+    .texto-nosotros h2,
+    .texto-contacto h2 {
+        font-size: 34px;
+    }
+
+    .pie {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px) {
+    section {
+        scroll-margin-top: 145px;
+    }
+
+    .navegacion {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .enlaces {
+        gap: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .inicio {
+        padding-top: 190px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 500px) {
+    .inicio,
+    .servicios,
+    .nosotros,
+    .contacto {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .contenido-inicio p {
+        font-size: 18px;
+    }
+
+    .tarjeta,
+    .formulario {
+        padding: 25px;
+    }
+}
